@@ -1,0 +1,20 @@
+What is a framework:
+	A framework is a foundational structure that provides a generic functionality which can be selectively changed by additional user-written code, thus providing application-specific software.
+
+What is dajngo framework:
+	Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It was designed to help developers take applications from concept to completion as quickly as possible. Django includes many built-in features that make it easier to build a web application, such as an ORM (Object-Relational Mapping), a templating engine, and an authentication system.
+
+What is MVT:
+	MVT stands for Model-View-Template, which is a software design pattern used in web application development frameworks like Django.
+1) Model:
+	. Represents the data or the database schema.
+	. Handles all the database interactions and business logic related to the data.
+	 .In Django, the Model is defined as a Python class, and it is responsible for 	maintaining the database records.
+2) View:
+	. Contains the business logic and controls what data is presented to the user.
+	. Retrieves data from the Model and passes it to the Template.
+	. In Django, a View is typically a function or a class-based view defined in the views.py file.
+3) Template:
+	. Defines the structure and layout of the user interface.
+	. Used to render the data passed by the View.
+	. In Django, templates are HTML files with Django Template Language (DTL) syntax to dynamically insert data.
