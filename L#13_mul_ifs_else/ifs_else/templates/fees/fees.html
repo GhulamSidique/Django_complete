@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees</title>
+</head>
+<body>
+    {% if fee == 2000 %}
+        <h1>
+            The course fees is not 200 hence this part of condition will not be executed
+        </h1>
+
+    {% elif fee < 2000 %}
+        <h1>
+            {{dt|capfirst}} {{fee}}
+        </h1>
+
+    {% else %}
+        <h1>
+            this part will also not be executed since the condition 2 has already been satisfied 
+        </h1>
+        
+    {% endif %}
+</body>
+</html>

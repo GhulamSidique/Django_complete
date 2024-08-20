@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+</head>
+<body>
+    {% comment %} since the if condition is satisfied therefore the part of this condition will be executed {% endcomment %}
+    {% if nm != "java" and nm|length != 3 %}
+    
+        <h1>
+            {{nm|upper}} 
+            <br>
+            {{dt|capfirst}}
+        </h1>
+
+    {% elif dt|length > 100 %}
+
+        <h1>
+            the word lenght is not greater than 100
+        </h1>
+    
+    {% else %}
+        <h1>
+            else part is executed
+        </h1>
+
+    {% endif %}
+
+</body>
+</html>

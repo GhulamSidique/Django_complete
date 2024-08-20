@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            color: red;
+        }
+    </style>
+
+    <title>Charges</title>
+</head>
+<body>
+    
+    {% if fee == 2000 and dt|length > 10 %}
+
+    {{dt|capfirst}} {{fee}}
+    
+    {% endif %}
+
+
+</body>
+</html>

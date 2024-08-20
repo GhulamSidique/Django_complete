@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        background-color: black;
+        color: seashell;
+    }
+</style>
+
+    <title>Course</title>
+</head>
+<body>
+    {% comment %} here we have a condition {% endcomment %}
+    {% comment %} we can make use of and, or not for conditions as we do in other languages like python
+    for example % if nm and dt % {% endcomment %}
+    {% if nm|length >= 3 %}
+
+        <h1>
+            {{dt|capfirst}} {{nm|upper}}
+        </h1>
+
+    {% endif %}
+</body>
+</html>
