@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+</head>
+<body>
+    
+    {% for p_lang in list %}
+        <ul>
+            <li>
+                {{p_lang}}
+            </li>
+        </ul>
+    
+    {% endfor %}
+
+    <hr>
+    {% comment %} making use of other functions as defined in the pic  {% endcomment %}
+    {% comment %} all other conditions and logics are written same as we do in python language {% endcomment %}
+    {% for n in list %}
+        {{forloop.counter}} {{n}} <br>
+    {% endfor %}
+
+</body>
+</html>
