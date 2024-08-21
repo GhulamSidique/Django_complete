@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+{% comment %} here we will make use of the static file as follows {% endcomment %}
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% comment %} now adding css as follows {% endcomment %}
+
+    <link rel="stylesheet" href=" {% static 'css/style.css' %} "/>
+
+    <title>Course list</title>
+</head>
+<body>
+    {% if cr|length > 1 %}
+        <p>
+            {{cd|capfirst}}
+        </p>
+
+        {% for c in list %}
+            <ul>
+                <li>
+                    {{c|capfirst}}
+                </li>
+            </ul>
+        {% endfor %}
+
+    {% else %}
+        {% for r in cr %}
+            {{r}}
+        {% endfor %}
+
+    {% endif %}
+
+    <p>
+        Following person is the course instructor
+    </p>
+    <img src="{% static 'images/wallpaper2.png' %}" alt="instructor">
+</body>
+</html>
