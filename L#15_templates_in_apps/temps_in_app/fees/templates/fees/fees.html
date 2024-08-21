@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees</title>
+</head>
+<body>
+    
+    {% if pf|length < 5 %}
+        <p>
+            Only a few students have paid their fees
+        </p>
+
+    {% elif pf|length >= 5%}
+        <p>
+            {{ft|capfirst}}
+        </p>
+        {% for p in pf %}
+            <ul>
+                <li>
+                    {{p}}
+                </li>
+            </ul>
+        {% endfor %}
+    {% endif %}
+
+</body>
+</html>

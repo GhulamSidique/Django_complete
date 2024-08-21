@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            color: seashell;
+        }
+    </style>
+    <title>Course</title>
+</head>
+<body>
+    
+    {% if list|length != 3 %}
+        <p>
+            {{dt|capfirst}} 
+            <br>
+        </p>
+        {% for n in list  %}
+            <ul>
+                {{n|capfirst}}
+            </ul>
+
+        {% endfor %}
+
+    {% else %}
+    <p>
+        The list is out of index
+    </p>
+
+    {% endif %}
+    
+
+
+</body>
+</html>
