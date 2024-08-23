@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+{% comment %} load the static  {% endcomment %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% comment %} loading css {% endcomment %}
+    <link rel="stylesheet" href="{% static 'course/css/style.css' %}">
+
+    <title> {{nm|capfirst}} </title>
+</head>
+<body>
+    <p>
+        {% if nm == 'python: ' %}
+            <h1>
+                {{nm|capfirst}}
+            </h1>
+            <p>
+                {{dt|capfirst}} {{d|date:'DATETIME_FORMAT'}}
+            </p>
+
+        {% else %}
+            <p>
+                An error has occured while executing this code
+            </p>
+        {% endif %}
+    </p>
+
+    <p>
+        following is the course instructor
+        
+        {% comment %} loading images  {% endcomment %}
+        <img src=" {% static 'course/images/wallpaper2.png' %} " alt="">
+
+    </p>
+
+    {% comment %} loading the js file  {% endcomment %}
+    <form action="">
+        <input type="button" value="Click here" onclick="disp()" /> 
+    </form>
+    <script src= '{% static "course/js/test.js" %}'></script>
+
+</body>
+</html>
