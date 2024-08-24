@@ -1,0 +1,11 @@
+{% extends "course/base.html" %}
+{% comment %} we have to first extend the base file here with its complete path  {% endcomment %}
+
+{% comment %} since this is for course1 therefore the title for it is python course   {% endcomment %}
+{% block title %}
+Python
+{% endblock title %}
+
+{% block c_name %}
+<h1>{{nm|capfirst}}</h1>
+{% endblock c_name %}

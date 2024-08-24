@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% comment %} creating title block  {% endcomment %}
+    <title>
+        {% block title %}
+
+        {% endblock title %}
+    </title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>About</li>
+            <li>Home</li>
+            <li>Courses</li>
+        </ul>
+    </nav>
+
+    <p>
+        {% comment %} creating block for the course name  {% endcomment %}
+
+        {% block c_name %}
+
+        {% endblock c_name %}
+
+
+        <p> {{dt|capfirst}} {{d|date:'DATETIME_FORMAT'}} </p>
+    </p>
+</body>
+</html>
+
+{% comment %} now this base template will be inherited in the course1 and course2 files  {% endcomment %}
