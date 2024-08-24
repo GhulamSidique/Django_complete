@@ -1,0 +1,20 @@
+{% extends "course/base.html" %}
+
+{% comment %} title block  {% endcomment %}
+{% block title %}
+Python
+{% endblock title %}
+
+{% comment %} course name block  {% endcomment %}
+{% block c_name %}
+<h1>
+    {{nm|capfirst}}
+</h1>
+{% endblock c_name %}
+
+{% comment %} adding details block  {% endcomment %}
+{% block c_details %}
+<p>
+    {{dt|capfirst}} {{d|date:'DATETIME_FORMAT'}}
+</p>
+{% endblock c_details %}
